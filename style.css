@@ -1,0 +1,163 @@
+body {
+    line-height: 1.5;
+    font-family: 'Courier Prime', monospace;
+    background-color: #404040;
+    color: white;
+}
+
+h1{
+    font-size:60px;
+    font-weight:bold;
+    text-align:center;
+    margin:10px;
+}
+
+h2{
+    font-size:40px;
+    font-weight:bold;
+    text-align:center;
+    margin:10px;
+    margin-top:0;
+}
+
+ul{
+    list-style-type:none;
+}
+
+ul li{
+    text-align:left;
+    padding-left:50px;
+    font-size:20px;
+}
+
+img{
+    border-radius:10px;
+    transition-duration:1s;
+}
+
+img:hover{
+    transform:scale(1.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border: rgba(0, 0, 0, 0.3) solid 1px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.4);
+    padding: 20px;
+    margin: 5px;
+}
+
+.photos .flex {
+    flex-wrap: wrap;
+}
+
+.photos .card {
+    margin: 15px;
+}
+
+.photos .card img, .content .card img {
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+.recipe-wrap {
+    position: relative;
+    padding: 20px;
+}
+  
+.recipe-wrap:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-image: url('images/Mumbai_Pav_Bhaji_Masala.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+  
+.recipe-content {
+    position: relative;
+    font-size: 28px;
+    font-weight: bold;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recipe-content span {
+    font-size: 32px;
+}
+
+.photos, .enjoy {
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.image {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.ingredients {
+    animation: slideInFromRight 1s ease-in;
+}
+
+footer {
+    background-color: #9A8F97;
+}
+
+footer h2{
+    font-size: 32px;
+    font-weight: normal;
+    padding: 20px;
+    text-decoration: none;
+    text-align: end;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+}
